@@ -38,7 +38,7 @@
 
 ​	Distort prices or artificially inflate trading volume with the intent to mislead market participants.
 
-## Standard III：
+## Standard III：Duties to Clients
 
 ### (A) Loyalty, Prudence, and Care
 
@@ -80,10 +80,86 @@
 
 ​	Keep information about current, former, and prospective clients confidential.
 
-## Standard IV：
+## Standard IV：Duties to Employers
 
-## Standard V：
+### (A) Loyalty
 
-## Standard VI：
+​	Not engage in any activities that would injure the firm.
 
-## Standard VII：
+​	Client interests > Employer insterests != Family obligations
+
+​	Independent practice for compensation is allowed after employer consents.
+
+​	Violations:
+
+​		Misappropriation of trade secrets.
+
+​		Misuse of confidential information.
+
+​		Misappropriation of client list.
+
+### (B) Additional Compensation Arragements
+
+​	Must not accept gifts or compensation unless obtain written consents.
+
+​	Additional compensation arragement is a bonus that depends on the future performance.
+
+​	Gift is a bonus reward past performance.
+
+### (C) Responsibilities of Supervisors
+
+​	Ensure that anyone subject to their supervision or authority complies with applicable laws, the Code and the Standards.	
+
+## Standard V：Investment Analysis, Recommendations, and Actions
+
+### (A) Diligence and Reasonable Basis
+
+### (B) Communication with Clients and Propective Clients
+
+​	Disclose the basic format and general principles of the investment processes.
+
+​	Disclose significant limitations and risks.
+
+​	Identify factors that important to investment analyses.
+
+​	Distinguish between fact and opinion.
+
+### (C) Record retention
+
+​	The default minimum holding period is 7 years.
+
+## Standard VI：Conficts of Interest
+
+### (A) Disclosure of Conflicts
+
+​	Make full and fair disclosure of all matters that could reasonably be expected to impair their independence and objectivity to clients and employer.
+
+​	The most common conflict is actual ownership of stock in companies that the member recommends or that clients hold.
+
+​	Another conflict is member's compensation/bonus structure.
+
+​	Give employers enough information to judge the impact of a conflict, and to avoid conflicts.
+
+### (B) Priority of Transactions
+
+​	Client > Personal > Firm
+
+​	Family member account = Client account
+
+### (C) Referal Fees
+
+​	Must Inform emplyers, clients of any benefit received for referals of customers and clients.
+
+## Standard VII：Responsibilities as a CFA Institute Member or CFA Candidate
+
+### (A) Conduct as Participants in CFA Institute Programs
+
+​	Cheating on the exam.
+
+​	Revealing any content of exam.
+
+### (B) Reference to CFA Institute, the CFA Designation, and the CFA Program
+
+​	Must not misrepresent or exaggerate the meaning or implications of membership in CFA Institute.
+
+​	Must not make promotional promises.
