@@ -6,6 +6,10 @@
 
 ​	Members must comply with local law, his country's laws, or the Code and Standards.
 
+​	Approach supervisor -> Dissociate -> Resign
+
+ 	(If you know that violations of laws are taking place, approach supervisor first. If they will not, then you must dissociate from the activity. If this cannot be accomplished, you have to resign from the firm.)
+
 ### (B) Independency and Objectivity
 
 ​	Members must not offer,solicit, or accept any gift or compensation that could be expected to compromise their own or another's indepenence and objectivity.
@@ -51,6 +55,8 @@
 ​	Different service levels are acceptable, disclose to all clients.
 
 ​	Treat individual and institutional clients in a fair manner.
+
+​	Should not take advantage of their position in the industry to disadvantage clients (e.g., taking shares of an oversubscribed IPO).
 
 ### (C) Suitaility
 
