@@ -162,6 +162,14 @@ $$
 
 ## 第一节 导数概念
 
+### 非均速直线运动的速度和切线的斜率
+
+$$
+\lim_{x\rightarrow{x_0}}\frac{f(x)-f(x_0)}{x-x_0}
+$$
+
+
+
 ### 定义
 
 $$
@@ -180,3 +188,101 @@ $$
 切线方程:  $y - y_0 = f'(x_0)(x-x_0)$
 
 法线方程: $y-y_0 = -\frac{1}{f'(x_0)}(x-x_0)$
+
+
+
+## 第三节 高阶导数
+
+### 几个初等函数n阶导数
+
+$$
+(e^x)^{(n)}=e^x \\
+(\sin{x})^{(n)} = \sin(x + n \cdot \frac{\pi}{2}) \\
+(\cos{x})^{(n)} = \cos(x + n \cdot \frac{\pi}{2}) \\
+{[\ln(1+x)]}^{(n)} = (-1)^{n-1}\frac{(n-1)!}{(1+x)^n} \\
+(x^\mu)^{(n)} = \mu(\mu-1)(\mu-2)\cdots(\mu-n+1)x^{\mu-n} \\
+({u}\pm{v})^{(n)} = {u^{(n)}}\pm{v^{(n)}}
+$$
+
+
+
+### 莱布尼茨公式
+
+$$
+(uv)^{(n)} = {\sum_{k=0}^n}{C_n^k}{u^{(n-k)}}{v^(k)}
+$$
+
+## 第二、五节 导数公式和法则 微分公式和法则
+
+LaTex 定义dif: (https://liam.page/2017/05/01/the-correct-way-to-use-differential-operator/)
+$$
+\newcommand{\dif}{\mathop{}\!\mathrm{d}}
+
+\dif
+$$
+
+### 初等函数
+
+| 导数公式                                      | 微分公式                                              |
+| :-------------------------------------------- | ----------------------------------------------------- |
+| $(x^\mu)' = \mu{x}^{\mu-1}$                   | $\dif(x^\mu) = \mu{x}^{\mu-1}\dif{x}$                 |
+| $(\sin{x})' = \cos{x}$                        | $\dif(\sin{x}) = \cos{x}\dif{x}$                      |
+| $(\cos{x})' = -\sin{x}$                       | $\dif(\cos{x}) = -\sin{x}\dif{x}$                     |
+| $(\tan{x})' = \sec^2{x}$                      | $\dif(\tan{x}) = \sec^2{x}\dif{x}$                    |
+| $(\cot{x})' = -\csc^2{x}$                     | $\dif(\cot{x}) = -\csc^2{x}\dif{x}$                   |
+| $(a^x)' = a^x\ln{a}(a>0且a\neq1)$             | $\dif(a^x) = a^x\ln{a}\dif{x}(a>0且a\neq1)$           |
+| $(e^x)' = e^x$                                | $\dif(e^x) = e^x\dif{x}$                              |
+| $(\log_ax)' = \frac{1}{x\ln{a}}(a>0且a\neq1)$ | $\dif(log_ax)= \frac{1}{x\ln{a}}\dif{x}(a>0且a\neq1)$ |
+| $(\ln{x})' = \frac{1}{x}$                     | $\dif(\ln{x}) = \frac{1}{x}\dif{x}$                   |
+| $(\arcsin{x})' = \frac{1}{\sqrt{1-x^2}}$      | $\dif(\arcsin{x}) = \frac{1}{\sqrt{1-x^2}}\dif{x}$    |
+| $(\arccos{x})' = -\frac{1}{\sqrt{1-x^2}}$     | $\dif(\arccos{x}) = -\frac{1}{\sqrt{1-x^2}}\dif{x}$   |
+| $(\arctan{x})' = \frac{1}{1+x^2}$             | $\dif(\arctan{x}) = \frac{1}{1+x^2}\dif{x}$           |
+| $(\text{arccot}{x})' = -\frac{1}{1+x^2}$      | $\dif(\text{arccot}{x}) = -\frac{1}{1+x^2}\dif{x}$    |
+
+### 和差积商
+
+| 和差积商的求导法则                               | 和差积商的微分法则                                           |
+| ------------------------------------------------ | ------------------------------------------------------------ |
+| $(u \pm v)' = u' \pm v'$                         | $\dif(u \pm v) = \dif{u} \pm \dif{v}$                        |
+| $(Cu)' = Cu'$                                    | $\dif(Cu) = C\dif{u}$                                        |
+| $(uv)' = u'v + v'u$                              | $\dif(uv) = v\dif{u} + u\dif{v}$                             |
+| $(\frac{u}{v})' = \frac{u'v-v'u}{v^2}(v \neq 0)$ | $\dif(\frac{u}{v}) = \frac{v\dif{u}-u\dif{v}}{v^2}(v \neq 0)$ |
+
+### 反函数求导法则
+
+$$
+[f^{-1}(x)]' = \frac{1}{f'(y)} 或 \frac{\dif{y}}{\dif{x}} = \frac{1}{\frac{\dif{x}}{\dif{y}}}
+$$
+
+### 复合函数
+
+| 复合函数的求导法则$y=f(u),u=g(x)$ | 复合函数的微分法则$y=f(u),u=g(x)$                            |
+| --------------------------------- | ------------------------------------------------------------ |
+| $y'(x) = f'(u)\cdot{g'(x)}$       | $\newcommand*{\dif}{\mathop{}\!\mathrm{d}}y = f'(u)g'(x)\newcommand*{\dif}{\mathop{}\!\mathrm{d}}x$ 或 $\newcommand*{\dif}{\mathop{}\!\mathrm{d}}y = f'(u)\newcommand*{\dif}{\mathop{}\!\mathrm{d}}u$ |
+
+## 第五节 微分在近似计算中的应用
+
+### 近似计算公式
+
+$$
+\begin{gather}
+\Delta{y} = f(x_0+\Delta{x}) - f(x_0) \approx f'(x_0)\Delta{x} \tag{5-4} \\
+f(x_0+\Delta{x}) \approx f(x_0) + f'(x_0)\Delta{x} \tag{5-5} \\
+f(x) \approx f(x_0) + f'(x_0)(x-x_0) \tag{5-6} \\
+\end{gather}
+$$
+
+### 近似计算实质
+
+近似计算的实质是用$x$的线性函数$f(x_0)+f'(x_0)(x-x_0)$来近似表达函数$f(x)$
+
+### 工程中常用近似公式
+
+$$
+(1+x)^\alpha \approx 1+\alpha{x}(\alpha \in \mathbb{R}) \\
+\sin(x) \approx x (x用弧度单位) \\
+\tan(x) \approx x (x用弧度单位) \\
+e^x \approx 1 + x \\
+\ln(1+x) \approx x \\
+$$
+
