@@ -212,55 +212,38 @@ $$
 (uv)^{(n)} = {\sum_{k=0}^n}{C_n^k}{u^{(n-k)}}{v^(k)}
 $$
 
-## 第二、五节 导数公式和法则 微分公式和法则
+## 第四节 隐函数及参数方程的导数
 
-LaTex 定义dif: (https://liam.page/2017/05/01/the-correct-way-to-use-differential-operator/)
-$$
-\newcommand{\dif}{\mathop{}\!\mathrm{d}}
+### 对数求导法
 
-\dif
-$$
-
-### 初等函数
-
-| 导数公式                                      | 微分公式                                              |
-| :-------------------------------------------- | ----------------------------------------------------- |
-| $(x^\mu)' = \mu{x}^{\mu-1}$                   | $\dif(x^\mu) = \mu{x}^{\mu-1}\dif{x}$                 |
-| $(\sin{x})' = \cos{x}$                        | $\dif(\sin{x}) = \cos{x}\dif{x}$                      |
-| $(\cos{x})' = -\sin{x}$                       | $\dif(\cos{x}) = -\sin{x}\dif{x}$                     |
-| $(\tan{x})' = \sec^2{x}$                      | $\dif(\tan{x}) = \sec^2{x}\dif{x}$                    |
-| $(\cot{x})' = -\csc^2{x}$                     | $\dif(\cot{x}) = -\csc^2{x}\dif{x}$                   |
-| $(a^x)' = a^x\ln{a}(a>0且a\neq1)$             | $\dif(a^x) = a^x\ln{a}\dif{x}(a>0且a\neq1)$           |
-| $(e^x)' = e^x$                                | $\dif(e^x) = e^x\dif{x}$                              |
-| $(\log_ax)' = \frac{1}{x\ln{a}}(a>0且a\neq1)$ | $\dif(log_ax)= \frac{1}{x\ln{a}}\dif{x}(a>0且a\neq1)$ |
-| $(\ln{x})' = \frac{1}{x}$                     | $\dif(\ln{x}) = \frac{1}{x}\dif{x}$                   |
-| $(\arcsin{x})' = \frac{1}{\sqrt{1-x^2}}$      | $\dif(\arcsin{x}) = \frac{1}{\sqrt{1-x^2}}\dif{x}$    |
-| $(\arccos{x})' = -\frac{1}{\sqrt{1-x^2}}$     | $\dif(\arccos{x}) = -\frac{1}{\sqrt{1-x^2}}\dif{x}$   |
-| $(\arctan{x})' = \frac{1}{1+x^2}$             | $\dif(\arctan{x}) = \frac{1}{1+x^2}\dif{x}$           |
-| $(\text{arccot}{x})' = -\frac{1}{1+x^2}$      | $\dif(\text{arccot}{x}) = -\frac{1}{1+x^2}\dif{x}$    |
-
-### 和差积商
-
-| 和差积商的求导法则                               | 和差积商的微分法则                                           |
-| ------------------------------------------------ | ------------------------------------------------------------ |
-| $(u \pm v)' = u' \pm v'$                         | $\dif(u \pm v) = \dif{u} \pm \dif{v}$                        |
-| $(Cu)' = Cu'$                                    | $\dif(Cu) = C\dif{u}$                                        |
-| $(uv)' = u'v + v'u$                              | $\dif(uv) = v\dif{u} + u\dif{v}$                             |
-| $(\frac{u}{v})' = \frac{u'v-v'u}{v^2}(v \neq 0)$ | $\dif(\frac{u}{v}) = \frac{v\dif{u}-u\dif{v}}{v^2}(v \neq 0)$ |
-
-### 反函数求导法则
+### 参数方程的导数
 
 $$
-[f^{-1}(x)]' = \frac{1}{f'(y)} 或 \frac{\dif{y}}{\dif{x}} = \frac{1}{\frac{\dif{x}}{\dif{y}}}
+\begin{gather}
+\begin{cases}
+x = \varphi(t) \\
+y = \psi(t) \\
+\end{cases} \tag{4-3} \\
+
+\frac{\dif{y}}{\dif{x}} = \frac{\frac{\dif{y}}{\dif{t}}}{\frac{\dif{x}}{\dif{t}}} \tag{4-4} \\
+\frac{\dif^2{y}}{\dif{x^2}} = \frac{\dif}{\dif{x}}\left(\frac{\dif{y}}{\dif{x}}\right) \cdot \frac{1}{\frac{\dif{x}}{\dif{t}}} \tag{4-5} \\
+\end{gather}
 $$
 
-### 复合函数d
 
-| 复合函数的求导法则$y=f(u),u=g(x)$ | 复合函数的微分法则$y=f(u),u=g(x)$                            |
-| --------------------------------- | ------------------------------------------------------------ |
-| $y'(x) = f'(u)\cdot{g'(x)}$       | $\newcommand*{\dif}{\mathop{}\!\mathrm{d}}y = f'(u)g'(x)\newcommand*{\dif}{\mathop{}\!\mathrm{d}}x$ 或 $\newcommand*{\dif}{\mathop{}\!\mathrm{d}}y = f'(u)\newcommand*{\dif}{\mathop{}\!\mathrm{d}}u$ |
 
 ## 第五节 微分在近似计算中的应用
+
+### 定义
+
+$$
+\begin{gather}
+\Delta{y} = f(x_0+\Delta{x}) - f(x_0) \tag{5-1} \\
+\dif{y} = f'(x)\Delta{x} \tag{5-2} \\
+\end{gather}
+$$
+
+
 
 ### 近似计算公式
 
@@ -285,6 +268,51 @@ $$
 e^x \approx 1 + x \\
 \ln(1+x) \approx x \\
 $$
+
+## 导数公式和法则 微分公式和法则
+
+### 初等函数
+
+| 导数公式                                      | 微分公式                                              |
+| :-------------------------------------------- | ----------------------------------------------------- |
+| $(x^\mu)' = \mu{x}^{\mu-1}$                   | $\dif(x^\mu) = \mu{x}^{\mu-1}\dif{x}$                 |
+| $(\sin{x})' = \cos{x}$                        | $\dif(\sin{x}) = \cos{x}\dif{x}$                      |
+| $(\cos{x})' = -\sin{x}$                       | $\dif(\cos{x}) = -\sin{x}\dif{x}$                     |
+| $(\tan{x})' = \sec^2{x}$                      | $\dif(\tan{x}) = \sec^2{x}\dif{x}$                    |
+| $(\cot{x})' = -\csc^2{x}$                     | $\dif(\cot{x}) = -\csc^2{x}\dif{x}$                   |
+| $(\sec{x})'=\sec{x}\tan{x}$                   | $\dif(\sec{x})=\sec{x}\tan{x}\dif{x}$                 |
+| $(\csc{x})'=-\csc{x}\cot{x}$                  | $\dif(\csc{x})=-\csc{x}\cot{x}\dif{x}$                |
+| $(a^x)' = a^x\ln{a}(a>0且a\neq1)$             | $\dif(a^x) = a^x\ln{a}\dif{x}(a>0且a\neq1)$           |
+| $(e^x)' = e^x$                                | $\dif(e^x) = e^x\dif{x}$                              |
+| $(\log_ax)' = \frac{1}{x\ln{a}}(a>0且a\neq1)$ | $\dif(log_ax)= \frac{1}{x\ln{a}}\dif{x}(a>0且a\neq1)$ |
+| $(\ln{x})' = \frac{1}{x}$                     | $\dif(\ln{x}) = \frac{1}{x}\dif{x}$                   |
+| $(\arcsin{x})' = \frac{1}{\sqrt{1-x^2}}$      | $\dif(\arcsin{x}) = \frac{1}{\sqrt{1-x^2}}\dif{x}$    |
+| $(\arccos{x})' = -\frac{1}{\sqrt{1-x^2}}$     | $\dif(\arccos{x}) = -\frac{1}{\sqrt{1-x^2}}\dif{x}$   |
+| $(\arctan{x})' = \frac{1}{1+x^2}$             | $\dif(\arctan{x}) = \frac{1}{1+x^2}\dif{x}$           |
+| $(\text{arccot}{x})' = -\frac{1}{1+x^2}$      | $\dif(\text{arccot}{x}) = -\frac{1}{1+x^2}\dif{x}$    |
+
+### 和差积商
+
+| 和差积商的求导法则                               | 和差积商的微分法                                             |
+| ------------------------------------------------ | ------------------------------------------------------------ |
+| $(u \pm v)' = u' \pm v'$                         | $\dif(u \pm v) = \dif{u} \pm \dif{v}$                        |
+| $(Cu)' = Cu'$                                    | $\dif(Cu) = C\dif{u}$                                        |
+| $(uv)' = u'v + v'u$                              | $\dif(uv) = v\dif{u} + u\dif{v}$                             |
+| $(\frac{u}{v})' = \frac{u'v-v'u}{v^2}(v \neq 0)$ | $\dif(\frac{u}{v}) = \frac{v\dif{u}-u\dif{v}}{v^2}(v \neq 0)$ |
+
+### 反函数求导法则
+
+$$
+[f^{-1}(x)]' = \frac{1}{f'(y)} 或 \frac{\dif{y}}{\dif{x}} = \frac{1}{\frac{\dif{x}}{\dif{y}}}
+$$
+
+### 复合函数
+
+| 复合函数的求导法则$y=f(u),u=g(x)$ | 复合函数的微分法则$y=f(u),u=g(x)$                            |
+| --------------------------------- | ------------------------------------------------------------ |
+| $y'(x) = f'(u)\cdot{g'(x)}$       | $\newcommand*{\dif}{\mathop{}\!\mathrm{d}}y = f'(u)g'(x)\newcommand*{\dif}{\mathop{}\!\mathrm{d}}x$ 或 $\newcommand*{\dif}{\mathop{}\!\mathrm{d}}y = f'(u)\newcommand*{\dif}{\mathop{}\!\mathrm{d}}u$ |
+
+
 
 # 第三章 微分中值定理与导数应用
 
@@ -348,7 +376,7 @@ $$
 
 ### 不定式
 
-如果当$x\rightarrow{a}$（或$x->\infty$）时，两个函数$f(x)与$F(x)都趋于零或都趋于无穷大，那么
+如果当$x\rightarrow{a}$（或$x\rightarrow\infty$）时，两个函数$f(x)与$F(x)都趋于零或都趋于无穷大，那么
 $$
 \lim_{\substack{x\rightarrow{a} \\ (x\rightarrow\infty)}}\frac{f(x)}{F(x)}
 $$
@@ -404,7 +432,6 @@ $$
 
 $$
 R_n(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1} \tag{3-6}
-
 $$
 
 ### 误差估计式
@@ -531,4 +558,106 @@ $$
 
 ### 切线法
 
+$$
+x_{n+1} = x_{n} - \frac{f(x_{n})}{f'(x_{n})}
+$$
+
+
+
 ### 割线法
+
+计算导数困难时，使用割线法替代切线法。
+$$
+x_{n+1} = x_n - \frac{x_n - x_{n-1}}{f(x_n)-f(x_{n-1})} f(x_n)
+$$
+
+# 第四章 不定积分
+
+## 第一节 概念与性质
+
+### 含义：导函数的原函数+常数项
+
+$$
+\int{f(x)}\dif{x} = F(x)+C
+$$
+
+### 基础积分表（熟记）
+
+$$
+\begin{align*}
+& \int{k}\dif{x} = kx + C (k是常数) \\
+& \int{x^\mu}\dif{x} = \frac{x^{\mu+1}}{\mu+1} + C \\
+& \int\frac{1}{x}\dif{x} = \ln{x} + C \\
+& \int\frac{1}{1+x^2}\dif{x} = \arctan{x} + C \\
+& \int\frac{1}{\sqrt{1-x^2}}\dif{x} = \arcsin{x} + C \\
+& \int\cos{x}\dif{x} = \sin{x} + C \\
+& \int\sin{x}\dif{x} = -\cos{x} + C \\
+& \int\frac{1}{\cos^2{x}}\dif{x} = \int\sec^2{x}\dif{x} = \tan{x} + C \\
+& \int\frac{1}{\sin^2{x}}\dif{x} = \int\csc^2{x}\dif{x} = -\cot{x} + C \\
+& \int\sec{x}\tan{x}\dif{x} = \sec{x} + C \\
+& \int\csc{x}\cot{x}\dif{x} = -\csc{x} + C \\
+& \int{e^x}\dif{x} = e^x + C \\
+& \int{a^x}\dif{x} = \frac{a^x}{\ln{a}} + C \\
+\end{align*}
+$$
+
+
+
+## 第二节 换元积分法
+
+### 含义：求复合函数积分
+
+### 第一类换元法
+
+### 第二类换元法
+
+### 常用积分表
+
+$$
+\begin{align*}
+& \int\sinh{x}\dif{x} = \cosh{x} + C \\
+& \int\cosh{x}\dif{x} = \sinh{x} + C \\
+& \int\tan{x}\dif{x} = -\ln|\cos{x}| + C \\
+& \int\cot{x}\dif{x} = \ln|\sin{x}| + C \\
+& \int\sec{x}\dif{x} = \ln|\sec{x}+\tan{x}| + C \\
+& \int\csc{x}\dif{x} = \ln|\csc{x}-\cot{x}| + C \\
+& \int\frac{1}{a^2+x^2}\dif{x} = \frac{1}{a} \arctan{\frac{x}{a}} + C \\
+& \int\frac{1}{x^2-a^2}\dif{x} = \frac{1}{2}\ln\left|\frac{x-a}{x+a}\right| = C\\
+& \int\frac{1}{\sqrt{a^2-x^2}}\dif{x} = \arcsin\frac{x}{a} + C \\
+& \int\frac{1}{\sqrt{x^2+a^2}}\dif{x} = \ln(x + \sqrt{x^2+a^2}) + C \\
+& \int\frac{1}{\sqrt{x^2-a^2}}\dif{x} = \ln|x + \sqrt{x^2-a^2}| + C \\
+\end{align*}
+$$
+
+
+
+
+
+## 第三节 分部积分法
+
+含义用两个函数乘积的求导法则，推得另一个求积分的基本方法
+$$
+\int{u}\dif{v} = uv - \int{v}\dif{u} \tag{3-2}
+$$
+选取恰当的$u$和$\dif{v}$：
+
+（1）$v$要容易求得。
+
+（2）$\int{v}\dif{u}$比$\int{u}\dif{v}$容易计算。
+
+
+
+# 附录
+
+## 自定义LaTeX符号
+
+### 定义dif
+
+参考：https://liam.page/2017/05/01/the-correct-way-to-use-differential-operator/
+$$
+\newcommand{\dif}{\mathop{}\!\mathrm{d}}\dif
+$$
+
+
+
+
