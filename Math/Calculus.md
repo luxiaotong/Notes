@@ -647,6 +647,65 @@ $$
 
 
 
+# 第五章 定积分
+
+## 第一节 概念与性质
+
+### 定义
+
+$$
+\int_a^bf(x)\dif{x} = \lim_{\lambda\rightarrow{0}}\sum_{i=1}^nf(\xi_i)\Delta{x_i} \tag{1-2}
+$$
+
+### 定理
+
+定理1：连续 => 可积
+
+定理2：有界，有限间断点 => 可积
+
+
+$$
+1^2+2^2+\cdots+n^2 = \frac{1}{6}n(n+1)(2n+1)
+$$
+
+### 近似计算
+
+矩形法公式
+$$
+\int_a^bf(x)\dif(x) \approx \frac{b-a}{n}(y_1+y_2+\cdots+y_n) \tag{1-4}
+$$
+矩形法几何意义：用窄条矩形的面积作为窄条梯形面积的近似值
+
+梯形法
+
+抛物线法
+
+### 性质
+
+$$
+\begin{align*}
+\tag{0.2} & b = a \Rightarrow \int_a^bf(x)\dif{x} \\
+\tag{0.1} & b \gt a \Rightarrow \int_a^bf(x)\dif{x} = -\int_b^af(x)\dif{x} \\
+\tag{1} & \int_a^b[{\alpha}f(x) + {\beta}f(x)]\dif{x} = \alpha\int_a^bf(x)\dif{x} + \beta\int_a^bf(x)\dif{x} \\
+\tag{2} & a \lt c \lt b, \int_a^bf(x)\dif{x} = \int_a^cf(x)\dif{x} + \int_c^bf(x)\dif{x} \\
+\tag{3} & f(x) \equiv 1, \int_a^b1\dif{x} = \int_a^b\dif{x} = b-a \\
+\tag{4} & f(x) \geq 0, \int_a^bf(x) \geq 0 \quad (a < b) \\
+\tag{4.1} & f(x) \leq g(x), \int_a^bf(x)\dif{x} \leq \int_a^bg(x)\dif{x} \\
+\tag{4.2} & f(x) \leq g(x), \int_a^bf(x)\dif{x} \leq \int_a^bg(x)\dif{x} \quad (a < b) \\
+\tag{5} & f(x) \left|\int_a^bf(x)\dif{x}\right| \leq \int_a^b|f(x)|\dif{x} \quad (a<b) \\
+\end{align*}
+$$
+
+定积分中值定理
+$$
+\int_a^bf(x)\dif{x} = f(\xi)(b-a) \quad (a\leq\xi\leq{b})
+$$
+
+
+
+
+
+
 # 附录
 
 ## 自定义LaTeX符号
