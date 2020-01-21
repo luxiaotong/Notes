@@ -609,7 +609,19 @@ $$
 
 ### 第一类换元法
 
+$$
+{\int}f([\varphi(x)])\varphi'(x)\dif{x} = \left[{\int}f(u)\dif{u}\right]_{u=\varphi(x)} \tag{2-1}
+$$
+
+
+
 ### 第二类换元法
+
+$$
+{\int}f(x)\dif{x} = \left[{\int}f[\psi(x)]\psi'(t)\dif{t}\right]_{t=\psi^{-1}(x)} \tag{2-2}
+$$
+
+
 
 ### 常用积分表
 
@@ -698,13 +710,92 @@ $$
 
 定积分中值定理
 $$
-\int_a^bf(x)\dif{x} = f(\xi)(b-a) \quad (a\leq\xi\leq{b})
+\int_a^bf(x)\dif{x} = f(\xi)(b-a) \quad (a\leq\xi\leq{b}) \tag{6}
+$$
+
+## 第二节 微积分基本公式
+
+### 牛顿-莱布尼茨公式
+
+这个公式揭示了定积分与被积函数的原函数或不定积分之间的联系。
+
+一个连续函数在区间[a,b]上的定积分等于它的任一个原函数在区间上的增量。
+$$
+\int_a^bf(x)\dif{x} = F(b) - F(a) \tag{2-4}
+$$
+
+# 第九章
+
+## 第二节 偏导数
+
+### 一阶偏导
+
+$$
+\begin{align*}
+& f_x(x_0, y_0) = \lim_{x\rightarrow{x_0}}\frac{f(x_0+\Delta{x}, y_0)-f(x_0, y_0)}{\Delta{x}} \tag{2-2} \\
+& f_y(x_0, y_0) = \lim_{y\rightarrow{y_0}}\frac{f(x_0, y_0+\Delta{y})-f(x_0, y_0)}{\Delta{y}} \tag{2-3} \\
+\end{align*}
+$$
+
+偏导数的记号是一个整体记号，不能看作分子与分母之商。
+
+### 高阶偏导
+
+$$
+\begin{align*}
+& \frac{\partial}{\partial{x}}\left(\frac{\partial{z}}{\partial{x}}\right) = \frac{\partial^2z}{\partial{x}^2}=f_{xx}(x, y) \\
+& \frac{\partial}{\partial{y}}\left(\frac{\partial{z}}{\partial{x}}\right) = \frac{\partial^2z}{\partial{x}\partial{y}}=f_{xy}(x, y) \\
+& \frac{\partial}{\partial{x}}\left(\frac{\partial{z}}{\partial{y}}\right) = \frac{\partial^2z}{\partial{y}\partial{x}}=f_{yx}(x, y) \\
+& \frac{\partial}{\partial{y}}\left(\frac{\partial{z}}{\partial{y}}\right) = \frac{\partial^2z}{\partial{y}^2}=f_{yy}(x, y) \\
+\end{align*}
+$$
+
+高阶混合偏导数在偏导连续的条件下与求导的次序无关。
+
+### 拉普拉斯方程
+
+$$
+\begin{align*}
+& \frac{\partial^2z}{\partial{x}^2} + \frac{\partial^2z}{\partial{y}^2} = 0 \\
+& \frac{\partial^2u}{\partial{x}^2} + \frac{\partial^2u}{\partial{y}^2} + \frac{\partial^2u}{\partial{z}^2} = 0 \\
+\end{align*}
+$$
+
+## 第三节 全微分
+
+### 定义
+
+全增量
+$$
+\Delta{z} = f(x+\Delta{x}, y+\Delta{y})-f(x,y)
+$$
+全微分
+$$
+\begin{align*}
+& \dif{z} = \frac{\partial{z}}{\partial{x}}\Delta{x} + \frac{\partial{z}}{\partial{y}}\Delta{y} \\
+& \dif{z} = \frac{\partial{z}}{\partial{x}}\dif{x} + \frac{\partial{z}}{\partial{y}}\dif{y} \\
+& \dif{u} = \frac{\partial{u}}{\partial{x}}\dif{x} + \frac{\partial{u}}{\partial{y}}\dif{y}  + \frac{\partial{u}}{\partial{z}}\dif{z} \\
+\end{align*}
+$$
+
+### 充分必要条件
+
+各偏导数存在 <= 可微分
+
+各偏导数连续 => 可微分
+
+## 第四节 多元复合函数的求导法则
+
+### 一元函数与多元函数 复合的情形
+
+$$
+u=\varphi(t), v=\psi(t), z = f[\varphi(t),\psi(t)] \\
+\frac{\dif{z}}{\dif{t}} = \partial
 $$
 
 
 
-
-
+### 多元函数与多元函数 复合的情形
 
 # 附录
 
